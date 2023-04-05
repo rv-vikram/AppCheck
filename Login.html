@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/Login.css">
     <title>Document</title>
 </head>
-        <body>
-            <form>
-                <div id="container">
-                    <div id="heading">
-                <h4>Sign in</h4>
-                <p style="color:#6e696a"; class="para1">Using your beautgenics account </p>
-                
+
+<body>
+    <form onsubmit="mainPage(event)">
+        <div id="container">
+            <div id="heading">
+                <span onclick="goBack()" class="material-symbols-outlined">
+                    arrow_back
+                </span>
+                <br />
+                <img src="./images/Logo-small.svg.jpg" alt="Main Logo">
+                <p>Sign in</p>
+                <p>Using your beautgenics account </p>
+
             </div>
             <div class="form-group">
 
-                  <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="Email address/Phone">
-                  </div>
-                <div class="form-group">
-            
-
-                <input type="password"class="form-control" placeholder="Enter your password" id="password"
-                ><i class="fa-solid fa-eye" id="eye"></i>
+                <input class="form-control" id="exampleInputEmail1" placeholder="Email address/Phone"
+                    autocomplete="false">
+                <div class="passwordBox">
+                    <input type="password" class="form-control" placeholder="Enter your password" id="password"><span
+                        class="material-symbols-outlined">
+                        visibility
+                    </span>
+                </div>
                 <p class="para2">Forgot password?</p>
             </div>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check" id="exampleCheck1">
-                 </input>
-                 <p class="para3">Remember my login info</p>
+            <input type="checkbox" class="form-check" id="exampleCheck1">
+            </input>
+            <label class="para3">Remember my login info</label>
 
-                 
-                </div>
-                <button class="sigin" style="background-color:#C83B53" type="submit" class="btn btn-primary">Sign in</button>
-                <p class="para4">Don’t have an account?<span style="color:#C83B53">Signup</span> </p>
-              
-            
-            </form>
+            <button class="sigin" type="submit" class="btn btn-primary">Sign
+                in</button>
+            <br>
+            <p class="para4">Don’t have an account?<span style="color:#C83B53">Signup</span> </p>
+
         </div>
-        </body>
-      <script>
-   const passwordInput = document.querySelector("#password")
-const eye = document.querySelector("#eye")
 
-eye.addEventListener("click", function(){
-  this.classList.toggle("fa-eye-slash")
-  const type = passwordInput.getAttribute("type") === "password" ? "text" : "password"
-  passwordInput.setAttribute("type", type)
-})
-      </script>
-            </html>
+
+    </form>
+    </div>
+</body>
+<script src="./scripts/login.js"></script>
+
+</html>
