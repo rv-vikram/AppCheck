@@ -1,0 +1,66 @@
+#container {
+    margin: 30px;
+    font-family: Roboto, sans-serif;
+
+}
+
+#heading {
+    text-align: left;
+    height: 80%;
+    padding-top: 30%;
+}
+
+.form-control {
+    padding: 15px;
+    margin-bottom: 20px;
+    font: bold;
+
+}
+
+h4 {
+    font: bold
+}
+
+.fa-solid fa-eye {
+    margin-left: 20px;
+}
+
+
+
+.sigin {
+    padding: 14px;
+    margin: 10px 10px 10px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-check {
+    padding: 10px
+}
+
+.para1 {
+    margin-bottom: 40px;
+}
+
+.para4 {
+    text-align: center;
+    font: bolder;
+}
+
+.para2 {
+    text-align: right;
+    font-size: small;
+    color: #C83B53;
+    margin-top: -35px;
+}
+
+.para3 {
+    margin-left: 25px;
+    margin-top: -25px;
+    color: #524d4e;
+}
+
+#eye {
+    margin-left: 90%;
+    /* margin-top: -70%; */
+}

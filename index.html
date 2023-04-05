@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/index.css" />
+  <title>Document</title>
+
+</head>
+
+<body>
+  <div id="splash">
+    <div class="splashImage">
+      <img src="./images/Beautgenics_Logo.svg" alt="Main logo">
+    </div>
+  </div>
+  <div id="mainpage">
+    <div id="welcome">
+      <img src="./images/Logo-small.svg.jpg" alt="Main Logo">
+      <div>
+        <div class="header">Welcome to</div>
+        <div class="header colored">Beautgenics</div>
+      </div>
+      <p class="para1">An app where you can manage all your <br>Beauty Analyst activties & much more...</p>
+
+      <p class="para2">Let’s get started...</p>
+    </div>
+    <div>
+
+      <button onclick="toSignIn()" class="button-google" type="button">
+        <img class="google-icon"
+          src="data:image/jpeg;base64,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"
+          alt="Google" />
+        <span class="google-signin">Continue with Google</span>
+      </button>
+    </div>
+
+    <div>
+      <button onclick="toSignIn()" class="button-apple" type="button">
+        <img class="apple-icon"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAaVBMVEX8/vwAAAD////19vXh4uHf39/P0M/x8vH5+vnIyMgVFhUdHh3FxsVkZWS1trW4ubhISEjs7OyOj458fHw3ODfX19e+v76VlpWmp6asrawkJCQ9PT1QUVBfYF8tLS1wcXAMDQydnp2GhoZFEKB6AAAEeUlEQVRoge3bbZeqIBAAYBrNsLQyX3ov7f//yKttbQgM4Mq4556zfEafJMJhmNjMd1vlzdqtJ/ML3/dzBjD/BTuNAICxX7DTkrVw26Ca2C7WL7m1J/6+0+Att/ZmUnsDH5rBYUK7iAS5te/T2UXZoxlsJ7OLUKLD1WR2f8BbO3a8cLydSDSDy1T2XaEj10vH2rVMM8inso/KYy+crx1pb9XH3k1lxyMee6RdBPJjs3Qq+6A8djLg6lH2KZOXlfI0lX3hEh2ch1w+yt5JCzlzXdE82NKrEwY99Ui7N8shLAZePsZeiTbEQ6bZaPsqftXuy5lfG6ByDFU82wA8GrCY+bKha2XjGCL9xD7vkrgEnkTJIe8z91yNSG+PdbxoI2aYx41lOCx2nTeL59N1Y9u1qDEEwLfHIXz1/urPNzvD7Dfap0cIIK1dANn6orthkUaBpndwRBc7k/3IQAkNnjdkWXXtj/7ykiy0nbufX4wsOridlsjNvp4nTJrtsn66RZ7M8b5tb67fJKH2wXS3Lx4WWVVVz5E2923XW93vH7EL+c2MfwDHjntXO+VOdxzSNBGN1s6Zd7rbM8hrkM5u3MZxNK6xlV2OP7y22FcqugslV0b7TEe3seTWZC/dflw/kuX8k2xv6OjgMTPaZPOs3agpUaxkh2RzvFRfKH17TUdrXrs9+8Ttd/kZneniqp6tbCt9Na4NY3s22YjLM1y1qSY5lnkS7YrKtsdMSyoay0UIdk71dWP7U8EmGnI8BSPYSr7Kk43mGT/2Tc1XeWnBzW4TvbihxGjBfhDZ+nWlbxO9R+DqYBNNNfW1rbHlowc/DUKU/tgrmrDBdDb6bS//7D/7P7cXeIaX2mYBnu38tuv51K9Q+jXVUIBAvaa22wIHe08VKqJZVfL3N9Nlt2SbKuGAn1IK8RrZRhCLXD52XVI9OPYKp4/P8dkm2Moxujc70CfwBZtqorf40WavCJN62oVV3AOTJXoY47poVbTJUh7d0YEGF+2UMp3JLTkuQlt3Lt+zqVaXFy5PuJ5Nlnl46ZXBngXEON/jNumgdzjMU8wmHvSnHp30NuXy8sY/lXWSTRU4CfYWsy/Utph+me7M4mUXuF0Q/8rERJ9yRkW0RXjbqckm/cb75aPquaBS8+mznc024YNLBdqas1i6eHVxs9lnIppBM7PZVMEyzGu7XROlP+TMqr7mgMJWT4v0tRYU040rit5e+d+TanajSH2L91HXpV2wuh7Py7r80zbaJ7/VNdptMFrP5LXcQ15VLLbP8An5g5Ghfs1bCAPZcqi98hStA9fTxrq9k5e1FThWNGisVyw8FFUBR4srzXWaZ2tBnq14Dgx/ArDUiJ6xYX+iPIiiOA45/gGA4ceC1trYkzZ8A8iqfV7UrxfyLW/iQMfD3FQNb6/LbeQVDiAoc6VepdiHcrUfQFnr7uhud+Mu/ikOFkf9EWd9iZnQsx0by797nGqh7xG8G6tyQ3n9dRd+98we6KH7ELsd0d0xatsBP8x+t8uuajsme4e/PfwDaRk7VEKj918AAAAASUVORK5CYII="
+          alt="mac" />
+        <span class="google-signin">Continue with Apple</span>
+      </button>
+
+      <p class="para4">Already have an account? <span style="color:#c83b53"><a href="Login.html">Sign in</a></span></p>
+    </div>
+    </div>
+    <div id="errorScreen">
+      <h3>Please switch to mobile responsiveness i.e. width less than 500</h3>
+    </div>
+</body>
+<script src="./scripts/index.js"></script>
+
+</html>

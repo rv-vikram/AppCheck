@@ -1,0 +1,133 @@
+a{
+  text-decoration: none;
+  color: inherit;
+}
+button{
+  cursor: pointer;
+}
+.splashImage {
+  display: flex;
+  justify-content: center;
+  margin-top: 30vh;
+}
+.splashImage>img{
+  width: 60%;
+}
+#errorScreen{
+    display: none;
+}
+
+#mainpage {
+  margin: 30px;
+  display: none;
+  font-family: Roboto, sans-serif;
+}
+
+#welcome {
+  height: 100%;
+  padding-top: 20%;
+  height: auto;
+}
+
+#welcome>img{
+  width: 50px;
+}
+
+#welcome>div:nth-child(2){
+  margin-top: 40px;
+}
+
+.header{
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.para1,.para2{
+  font-family: 'Inter', sans-serif;
+  color: #666666;
+  font-weight: 400;
+}
+
+.colored{
+  color: #de0133;
+}
+
+.button-google {
+  width: 100%;
+  text-align: center;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 15px 15px;
+  border: 1px solid #E0E0E0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-apple {
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  color: white;
+  font: bold;
+  background-color: black;
+  border: 0px;
+  font-size: 14px;
+  padding: 15px 15px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-icon {
+  width: 40px;
+}
+.apple-icon {
+  width: 20px;
+  margin-right: 5%;
+}
+.para1 {
+  margin-bottom: 48px;
+}
+.para4{
+  text-align: center;
+}
+
+/* Small screens */
+/* @media all and (min-width: 390px) and (max-width: 844px) {
+  #mainpage {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    text-align: center;
+    align-items: center;
+    outline: none;
+    font-size: 15px;
+    margin-left: 12px;
+  }
+  #welcome {
+    text-align: left;
+    padding-top: 50%;
+  }
+  .button-google {
+    width: 95%;
+    padding: 2px 2px;
+    text-align: center;
+    align-items: center;
+    border: 0px;
+    font-size: 15px;
+    padding: 20px 20px;
+    margin-right: 8px;
+    border: 1px;
+  }
+  .button-apple {
+    width: 95%;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    background-color: black;
+    border: 0px;
+    font-size: 15px;
+    padding: 15px 15px;
+  }
+} */

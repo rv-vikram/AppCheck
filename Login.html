@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/Login.css">
+    <title>Document</title>
+</head>
+        <body>
+            <form>
+                <div id="container">
+                    <div id="heading">
+                <h4>Sign in</h4>
+                <p style="color:#6e696a"; class="para1">Using your beautgenics account </p>
+                
+            </div>
+            <div class="form-group">
+
+                  <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="Email address/Phone">
+                  </div>
+                <div class="form-group">
+            
+
+                <input type="password"class="form-control" placeholder="Enter your password" id="password"
+                ><i class="fa-solid fa-eye" id="eye"></i>
+                <p class="para2">Forgot password?</p>
+            </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check" id="exampleCheck1">
+                 </input>
+                 <p class="para3">Remember my login info</p>
+
+                 
+                </div>
+                <button class="sigin" style="background-color:#C83B53" type="submit" class="btn btn-primary">Sign in</button>
+                <p class="para4">Don’t have an account?<span style="color:#C83B53">Signup</span> </p>
+              
+            
+            </form>
+        </div>
+        </body>
+      <script>
+   const passwordInput = document.querySelector("#password")
+const eye = document.querySelector("#eye")
+
+eye.addEventListener("click", function(){
+  this.classList.toggle("fa-eye-slash")
+  const type = passwordInput.getAttribute("type") === "password" ? "text" : "password"
+  passwordInput.setAttribute("type", type)
+})
+      </script>
+            </html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    
+    <style>
+        #navbar{
+            background-color: #C83B53;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         width: 28%;
+         margin: auto;
+         margin-top: 60px;
+         display: grid;
+        outline: none;
+        font-size: 15px;
+        padding-right: 15px;
+       
+        }
+        img{
+            width:50px;
+            padding:4px;
+        }
+
+        
+      
+      
+        .topnav {
+  overflow: hidden;
+  background-color: #C83B53;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background:#C83B53;
+  display: block;
+  position: relative;
+  right: 0;
+  top: 0;
+}
+
+.line{
+   width: 2px;
+  height: 17px;
+  background-color: aliceblue;
+  margin-left: 12%;
+  top: 20%;
+  left: 20%;
+  border-radius: 15px;
+
+}
+.para1{
+    margin-left: 25%;
+    text-align: justify;
+    margin-top: -15%;
+}
+
+.googlemap{
+    margin-left: 20%;
+    margin-top: -20%;
+
+}
+    </style>
+     </head>
+
+    <body>
+        <nav id="navbar">
+        
+        <div class="topnav">
+             <div id="myLinks">
+                      <a href="#Homes">Homes</a>
+                      <a href="#Sales">Sales</a>
+                      <a href="#Saleshistory">Sales History</a>
+                      <a href="#Leaderoard">Leaderboards</a>
+                      <a href="#Dashboard">Dashboard</a>
+                      <a href="#aLeaderboard">Sale History</a>
+                </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i>
+                    </a>
+
+                <div class="line"></div>
+        </div>
+                  <img  class="googlemap" src="data:image/png;base64,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" alt="googlemap"/>
+
+         <p class="para1">Health & Glow, 18th Main Road, HSR, Sector  II </p>
+        </nav>
+    </body>
+
+
+
+    <script>
+        function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+    </script>
+    </html>
